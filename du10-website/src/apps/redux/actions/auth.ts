@@ -1,5 +1,5 @@
-import authApi from "@apps/api/auth";
-import { removeItemLocalStorage } from "@utils/localStorage";
+import authApi from "../../../apps/api/auth";
+import { removeItemLocalStorage } from "../../../utils/localStorage";
 import { GET_USER, LOGOUT, FETCH_FAIL } from "../contant";
 
 export const getUserReducer = async (accessToken: string) => {

@@ -2,7 +2,7 @@ import { axiosClient } from "./axiosClient";
 import {
   IPostLoginGoogleResponse,
   IPayloadLoginGoogle,
-} from "@globalTypes/globalTypes";
+} from "../../types/globalTypes";
 
 interface IPostLoginDataResponse<T> {
   data: T;

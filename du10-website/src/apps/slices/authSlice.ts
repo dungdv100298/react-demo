@@ -1,5 +1,5 @@
-import { authServiceApi } from "@apps/services/authService";
-import { AuthProps } from "@globalTypes/globalTypes";
+import { authServiceApi } from "../services/authService";
+import { AuthProps } from "../../types/globalTypes";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 import {

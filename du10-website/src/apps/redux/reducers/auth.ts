@@ -1,4 +1,4 @@
-import { IUser } from "@globalTypes/globalTypes";
+import { IUser } from "../../../types/globalTypes";
 import { GET_USER, LOGOUT, FETCH_FAIL } from "../contant";
 
 interface IAuthState {

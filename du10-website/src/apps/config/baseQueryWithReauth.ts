@@ -1,4 +1,4 @@
-import { logout, setCredentials } from "@apps/slices/authSlice";
+import { logout, setCredentials } from "../slices/authSlice";
 import {
   BaseQueryFn,
   FetchArgs,
@@ -8,9 +8,9 @@ import {
 import { notification } from "antd";
 import { Mutex } from "async-mutex";
 
-import { PATH_API } from "@utils/constants";
-import { saveAccessToken, saveRefreshToken } from "@utils/localStorage";
-import { ErrorProps } from "@globalTypes/globalTypes";
+import { PATH_API } from "../../utils/constants";
+import { saveAccessToken, saveRefreshToken } from "../../utils/localStorage";
+import { ErrorProps } from "../../types/globalTypes";
 import { RootState } from "../store";
 
 interface AuthProps {

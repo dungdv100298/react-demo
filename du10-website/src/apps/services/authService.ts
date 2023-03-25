@@ -1,6 +1,6 @@
 import { createApi } from "@reduxjs/toolkit/query/react";
-import restBaseQueryWithReauth from "@apps/config/baseQueryWithReauth";
-import { ResponseProps, UserProps } from "@globalTypes/globalTypes";
+import restBaseQueryWithReauth from "../config/baseQueryWithReauth";
+import { ResponseProps, UserProps } from "../../types/globalTypes";
 
 export type LoginResposeType = {
   access_token: string;
