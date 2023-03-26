@@ -1,0 +1,33 @@
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-highlight {
+  position: relative;
+  background: 0 0;
+  z-index: 0;
+}
+
+.text-highlight::before {
+  content: "";
+  background: rgba(241, 196, 15, .3);
+  position: absolute;
+  left: 0;
+  right: -2px;
+  bottom: 2px;
+  height: 16px;
+  border-radius: 3px;
+  z-index: -1;
+}

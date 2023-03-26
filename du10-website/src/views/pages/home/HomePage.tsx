@@ -3,7 +3,7 @@ import Slides from "../../components/Slides";
 import { Col, Row } from "antd";
 import SlideNews from "../../components/slide-news";
 import OurCustomers from "../../components/our-customers";
-// import WhoWeAre from "../../components/about/WhoWeAre";
+import WhoWeAre from "../../components/about/WhoWeAre";
 import VideoModal from "../../components/modal/Video";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -62,7 +62,7 @@ export default function HomePage() {
             >
               <div className="p-4 rounded-full bg-[#fae4ec] my-2">
                 <img
-                  src="https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/backdrop2.webp"
+                  src="https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/in-avo-2-icon-3.png"
                   width={32}
                   height={32}
                   alt="logo"
@@ -111,7 +111,7 @@ export default function HomePage() {
             >
               <div className="p-4 rounded-full bg-[#fae4ec] my-2">
                 <img
-                  src="https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/backdrop2.webp"
+                  src="https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/in-avo-2-icon-3.png"
                   width={32}
                   height={32}
                   alt="logo"
@@ -129,7 +129,7 @@ export default function HomePage() {
         </div>
       </section>
       <section className="bg-[#FEF8FB]">
-        {/* <WhoWeAre onHandleModal={onHandleModal} /> */}
+        <WhoWeAre onHandleModal={onHandleModal} />
         <VideoModal openModal={openModal} onHandleCancel={onHandleCancel} />
       </section>
       <section className=" bg-[#FEF8FB] relative pt-32 pb-32">
@@ -137,32 +137,32 @@ export default function HomePage() {
           <SlideNews className={{ width: "500px" }} />
           <div className="mt-32 grid md:grid-cols-3 grid-rows-4 gap-4">
             <LazyLoadImage
-              src={"/images/img2.JPG"}
+              src={"https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/img2.JPG"}
               alt="Image Alt"
               className="md:row-span-3 object-cover  min-h-[400px] md:min-h-[140px] rounded-2xl h-full"
             />
             <LazyLoadImage
-              src={"/images/img3.jpg"}
+              src={"https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/img3.jpg"}
               alt="Image Alt"
               className="md:row-span-2 min-h-[400px] md:min-h-[140px] rounded-2xl"
             />
             <LazyLoadImage
-              src={"/images/img7.jpeg"}
+              src={"https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/img7.jpeg"}
               alt="Image Alt"
               className="row-span-1 min-h-[400px] md:min-h-[140px] rounded-2xl"
             />
             <LazyLoadImage
-              src={"/images/img4.jpg"}
+              src={"https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/img4.jpg"}
               alt="Image Alt"
               className="md:row-span-3 min-h-[400px]  md:min-h-[140px] rounded-2xl"
             />
             <LazyLoadImage
-              src={"/images/img5.jpg"}
+              src={"https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/img5.jpg"}
               alt="Image Alt"
               className="md:row-span-2 min-h-[400px]  md:min-h-[140px] rounded-2xl"
             />
             <LazyLoadImage
-              src={"/images/img6.jpeg"}
+              src={"https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/img6.jpeg"}
               alt="Image Alt"
               className="row-span-1 min-h-[400px] md:min-h-[140px] rounded-2xl"
             />

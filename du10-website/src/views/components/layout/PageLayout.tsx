@@ -29,7 +29,7 @@ export default function PageLayout({ children }: PageLayoutInterface) {
 
   return (
     <Layout id="app-layout">
-      {/* <Header></Header> */}
+      <Header></Header>
       <Content className="site-layout-background">
         <article className="app-content">{children}</article>
       </Content>

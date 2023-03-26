@@ -12,7 +12,9 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 import i18n from "./locales/i18n";
 import rootReducer from "./apps/redux/reducers";
-import './index.css'
+
+// import "antd/dist/antd.less";
+import "./assets/styles/main.scss";
 import { GOOGLE_CLIENT_ID } from "./utils/constants";
 
 const store = createStore(

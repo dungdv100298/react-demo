@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { PageHeader, Button, Modal } from "antd";
-import { DownOutlined, MenuOutlined, LoginOutlined } from "@ant-design/icons";
+// import { DownOutlined, MenuOutlined, LoginOutlined } from "@ant-design/icons";
 import { useGoogleLogin } from "@react-oauth/google";
 import { useDispatch, useSelector } from "react-redux";
 import OutsideClickHandler from "react-outside-click-handler";
@@ -26,46 +26,6 @@ const menus = [
     url: "/",
     isActive: false,
   },
-  // {
-  //   label: "Service",
-  //   icon: "",
-  //   key: "service",
-  //   url: "/",
-  //   isActive: false,
-  //   children: [
-  //     {
-  //       label: "DX Consulting",
-  //       icon: "",
-  //       key: "dxConsulting",
-  //       url: "/",
-  //     },
-  //     {
-  //       label: "Contract Development",
-  //       icon: "",
-  //       key: "contractDevelopment",
-  //       url: "/",
-  //     },
-  //     {
-  //       label: "Offshore Development Center (ODC)",
-  //       icon: "",
-  //       key: "odc",
-  //       url: "/",
-  //     },
-  //     {
-  //       label: "Blockchain and Web3",
-  //       icon: "",
-  //       key: "blockchain",
-  //       url: "/",
-  //     },
-  //   ],
-  // },
-  // {
-  //   label: "About us",
-  //   icon: "",
-  //   key: "aboutUs",
-  //   url: "/about-us",
-  //   isActive: false,
-  // },
   {
     label: "News",
     icon: "",
@@ -94,13 +54,6 @@ const menus = [
     url: "/study",
     isActive: false,
   },
-  // {
-  //   label: "Contributing",
-  //   icon: "",
-  //   key: "career",
-  //   url: "/contributing",
-  //   isActive: false,
-  // },
 ];
 
 const logo = "/images/logo_du10.svg";
@@ -134,16 +87,16 @@ export default function Header() {
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    const pathname = window.location.pathname;
-    const padthIndex = menus.findIndex((item) => item.url === pathname);
-    menus[padthIndex].isActive = true;
-  }, []);
+  // useEffect(() => {
+  //   const pathname = window.location.pathname;
+  //   const padthIndex = menus.findIndex((item) => item.url === pathname);
+  //   menus[padthIndex].isActive = true;
+  // }, []);
 
-  useEffect(() => {
-    if (isLoginSuccess) notifySuccess("Đăng nhập thành công");
-    if (isLoginFail) notifyError("Đăng nhập thất bại");
-  }, [isLoginSuccess, isLoginFail]);
+  // useEffect(() => {
+  //   if (isLoginSuccess) notifySuccess("Đăng nhập thành công");
+  //   if (isLoginFail) notifyError("Đăng nhập thất bại");
+  // }, [isLoginSuccess, isLoginFail]);
 
   const showModal = () => {
     const appLayout = document.getElementById("app-layout");
@@ -216,7 +169,7 @@ export default function Header() {
     else notifyError("Đăng xuất thất bại");
   };
 
-  const location = useLocation();
+  // const location = useLocation();
 
   return (
     <PageHeader
@@ -252,7 +205,7 @@ export default function Header() {
                       height={32}
                     />
                   </div>
-                  <DownOutlined className="language-header ml-2 text-[12px]" />
+                  {/* <DownOutlined className="language-header ml-2 text-[12px]" /> */}
                 </div>
                 <div className="language-header-option absolute flex flex-col w-fit bg-white p-4 rounded-lg">
                   {languageLogo?.map((item: any, index: any) => {
@@ -312,10 +265,11 @@ export default function Header() {
                 </div>
               </OutsideClickHandler>
             ) : (
-              <LoginOutlined
-                onClick={() => onHandleLoginGoogle()}
-                className="w-10 text-[20px] cursor-pointer"
-              />
+              // <LoginOutlined
+              //   onClick={() => onHandleLoginGoogle()}
+              //   className="w-10 text-[20px] cursor-pointer"
+              // />
+              <div></div>
             )}
           </div>
         </div>
@@ -323,7 +277,7 @@ export default function Header() {
         <Button
           type="text"
           shape="circle"
-          icon={<MenuOutlined />}
+          // icon={<MenuOutlined />}
           className="inline-block md:hidden !text-[#db2f69] !text-[20px]"
           onClick={showModal}
         ></Button>
@@ -357,12 +311,13 @@ export default function Header() {
                       {item.label}
                     </Link>
                     {item.children && (
-                      <DownOutlined
-                        onClick={() => clickMenu(item)}
-                        className={`${
-                          !showSubMenu && "icon-show-menu"
-                        } ml-2 text-[14px]`}
-                      />
+                      // <DownOutlined
+                      //   onClick={() => clickMenu(item)}
+                      //   className={`${
+                      //     !showSubMenu && "icon-show-menu"
+                      //   } ml-2 text-[14px]`}
+                      // />
+                      <div> </div>
                     )}
                   </div>
                   {item.children &&
@@ -398,12 +353,12 @@ export default function Header() {
               >
                 Language
               </div>
-              <DownOutlined
+              {/* <DownOutlined
                 onClick={() => setShowLanguage(!showLanguage)}
                 className={`${
                   !showLanguage && "icon-show-menu"
                 } ml-2 text-[14px]`}
-              />
+              /> */}
             </div>
             {showLanguage &&
               languageLogo?.map((item: any, index: any) => {
@@ -428,10 +383,10 @@ export default function Header() {
               })}
             <div className="flex items-center mt-6 cursor-pointer justify-center py-2 rounded-xl bg-[#DB2F69] active:bg-[#f184a9] text-white">
               <div className="font-bold text-base text-center">Sign in</div>
-              <LoginOutlined
-                onClick={() => onHandleLoginGoogle()}
+              {/* <LoginOutlined
+                // onClick={() => onHandleLoginGoogle()}
                 className="text-[20px] ml-4"
-              />
+              /> */}
             </div>
           </div>
         </Modal>

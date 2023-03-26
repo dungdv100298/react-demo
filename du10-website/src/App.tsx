@@ -1,13 +1,10 @@
-import { useState } from 'react'
 import { Route, Routes } from "react-router-dom";
 import PrivateRoute from "./views/components/PrivateRoute";
 import PublicRoute from "./views/components/PublicRoute";
 import { routeConfig } from "./routes/routes";
-
-import './App.css'
+// import 'antd/dist/reset.css';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="wrapper">

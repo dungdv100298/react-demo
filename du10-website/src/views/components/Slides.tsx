@@ -4,7 +4,7 @@ import { ArrowRightOutlined, ArrowLeftOutlined } from "@ant-design/icons";
 import { CarouselRef } from "antd/lib/carousel";
 
 const slidesStyle: React.CSSProperties = {
-  background: `url(https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/IMG_2830.JPG) no-repeat rgb(71 71 93)`,
+  background: `url(/images/IMG_2830-min.JPG) no-repeat rgb(71 71 93)`,
   backgroundPosition: "center",
   height: "calc(100vh - 90px)",
   backgroundSize: "cover",

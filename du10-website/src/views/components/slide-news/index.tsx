@@ -39,12 +39,12 @@ const Slide = (props: ISlideProps) => {
         className="turn absolute -left-4 -top-10 hidden md:block"
       />
       <img
-        src="https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/backdrop2.webp"
+        src="/images/in-avo-4-decor-3.svg"
         alt=""
         className="turn absolute -right-20 top-10 hidden md:block"
       />
       <img
-        src="https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/backdrop2.webp"
+        src="/images/in-avo-4-decor-1.svg"
         alt=""
         className="turn absolute -left-20 top-40 hidden md:block"
       />
