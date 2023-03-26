@@ -15,9 +15,9 @@ import {
   saveAccessToken,
   saveMenuOpenKeys,
   saveRefreshToken,
-} from "@utils/localStorage";
-import { useAppDispatch, useAppSelector } from "@apps/hooks";
-import { logout } from "@apps/slices/authSlice";
+} from "../../../utils/localStorage";
+import { useAppDispatch, useAppSelector } from "../../../apps/hooks";
+import { logout } from "../../../apps/slices/authSlice";
 
 const { Sider, Content } = Layout;
 

@@ -34,17 +34,17 @@ const Slide = (props: ISlideProps) => {
   return (
     <div className="mx-auto my-0 max-w-[787px] relative">
       <img
-        src="/images/in-avo-4-decor-2.svg"
+        src=""
         alt=""
         className="turn absolute -left-4 -top-10 hidden md:block"
       />
       <img
-        src="/images/in-avo-4-decor-3.svg"
+        src="https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/backdrop2.webp"
         alt=""
         className="turn absolute -right-20 top-10 hidden md:block"
       />
       <img
-        src="/images/in-avo-4-decor-1.svg"
+        src="https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/backdrop2.webp"
         alt=""
         className="turn absolute -left-20 top-40 hidden md:block"
       />

@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import Slides from "@components/Slides";
+import Slides from "../../components/Slides";
 import { Col, Row } from "antd";
-import SlideNews from "@components/slide-news";
-import News from "@components/news/index";
-import OurCustomers from "@components/our-customers";
-import WhoWeAre from "@components/about/WhoWeAre";
-import VideoModal from "@components/modal/Video";
+import SlideNews from "../../components/slide-news";
+import OurCustomers from "../../components/our-customers";
+// import WhoWeAre from "../../components/about/WhoWeAre";
+import VideoModal from "../../components/modal/Video";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function HomePage() {
@@ -63,7 +62,7 @@ export default function HomePage() {
             >
               <div className="p-4 rounded-full bg-[#fae4ec] my-2">
                 <img
-                  src="/images/in-avo-2-icon-3.png"
+                  src="https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/backdrop2.webp"
                   width={32}
                   height={32}
                   alt="logo"
@@ -112,7 +111,7 @@ export default function HomePage() {
             >
               <div className="p-4 rounded-full bg-[#fae4ec] my-2">
                 <img
-                  src="/images/in-avo-2-icon-3.png"
+                  src="https://vmojp-innovation.s3.ap-northeast-1.amazonaws.com/du10/backdrop2.webp"
                   width={32}
                   height={32}
                   alt="logo"
@@ -130,7 +129,7 @@ export default function HomePage() {
         </div>
       </section>
       <section className="bg-[#FEF8FB]">
-        <WhoWeAre onHandleModal={onHandleModal} />
+        {/* <WhoWeAre onHandleModal={onHandleModal} /> */}
         <VideoModal openModal={openModal} onHandleCancel={onHandleCancel} />
       </section>
       <section className=" bg-[#FEF8FB] relative pt-32 pb-32">

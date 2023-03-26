@@ -9,13 +9,13 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import "./style.scss";
-import { IPayloadLoginGoogle } from "@globalTypes/globalTypes";
-import { saveAccessToken } from "@utils/localStorage";
-import { getUserReducer, logOutReducer } from "@apps/redux/actions/auth";
-import { RootState } from "@apps/redux/reducers";
-import { Menu } from "@components/menu";
-import authApi from "@apps/api/auth";
-import { notifyError, notifySuccess } from "@utils/helperFuntions";
+import { IPayloadLoginGoogle } from "../../../../types/globalTypes";
+import { saveAccessToken } from "../../../../utils/localStorage";
+import { getUserReducer, logOutReducer } from "../../../../apps/redux/actions/auth"
+import { RootState } from "../../../../apps/redux/reducers";
+import { Menu } from "../../../components/menu";
+import authApi from "../../../../apps/api/auth";
+import { notifyError, notifySuccess } from "../../../../utils/helperFuntions";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const menus = [

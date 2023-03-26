@@ -4,8 +4,8 @@ import { useDispatch } from "react-redux";
 
 import Header from "./header";
 import Footer from "./footer";
-import { readAccessToken } from "@utils/localStorage";
-import { getUserReducer } from "@apps/redux/actions/auth";
+import { readAccessToken } from "../../../utils/localStorage";
+import { getUserReducer } from "../../../apps/redux/actions/auth";
 
 const { Content } = Layout;
 
@@ -29,7 +29,7 @@ export default function PageLayout({ children }: PageLayoutInterface) {
 
   return (
     <Layout id="app-layout">
-      <Header></Header>
+      {/* <Header></Header> */}
       <Content className="site-layout-background">
         <article className="app-content">{children}</article>
       </Content>

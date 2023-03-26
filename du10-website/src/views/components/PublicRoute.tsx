@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Navigate } from "react-router-dom";
 
-import { useAppSelector } from "@apps/hooks";
+import { useAppSelector } from "../../apps/hooks";
 import PageLayout from "./layout/PageLayout";
 function PublicRoute({ children }: { children: JSX.Element }) {
   const { access_token } = useAppSelector((state) => state.auth);
